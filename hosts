@@ -1,0 +1,13 @@
+[ansiable_control]
+ansible ansible_ssh_host=192.168.56.202
+
+[db]
+db1 asnible_ssh_host=192.168.56.200
+
+[web]
+web1 ansible_ssh_host=192.168.56.201
+
+[all:children]
+db
+web
+ansiable_control

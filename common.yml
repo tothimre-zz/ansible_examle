@@ -1,0 +1,12 @@
+---
+- name: Installs ansible remaining stuff
+  hosts: all 
+  user: root
+  
+  vars:  
+    add_ssh_keys_from_github:
+      usernames:
+       - tothimre
+
+  roles:
+    - laggyluke.add-ssh-keys-from-github 
